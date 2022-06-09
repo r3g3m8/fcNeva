@@ -97,12 +97,7 @@ header{
 .dws-menu > ul li{
     position: relative;
 }
-/*.dws-menu > ul li:first-child{
- border-left: 1px solid #b2b3b5;
-}
-.dws-menu > ul li:last-child{
- border-right: 1px solid #babbbd;
-}*/
+
 .dws-menu > ul li > a i.fa{
  position: absolute;
  top: 15px;
@@ -265,16 +260,6 @@ input[name = "r"]{
 .desc3{
     margin-top: 330px;
 }
-/*.slide > h1{
-    position: absolute;
-    color: aliceblue;
-    margin-left: 50px;
-    margin-right: auto;
-    margin-top: 320px;
-    z-index: 3;
-    vertical-align: bottom;
-    opacity: 0.8;
-}*/
 
 .container{
     margin: 0 auto;
@@ -294,7 +279,6 @@ input[name = "r"]{
 }
 .pre-title{
     font-family:'Open Sans', sans-serif;
-    font-weight: 550px;
     font-size: 18px;
     margin-left: auto;
     margin-right: auto;
@@ -314,7 +298,6 @@ input[name = "r"]{
 .title-1 img{
     display: block;
     margin: auto;
-    padding-left: auto;
 }
 
 .title-1 a{

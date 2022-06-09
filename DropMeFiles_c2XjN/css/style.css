@@ -1,0 +1,470 @@
+body{
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+}
+header{
+    right: 0;
+    left: 0;
+    padding-top: 0.5em;
+    background-color: #043b78;/*#06325f*/
+    width: 100%;
+    margin: auto;
+}
+.row-head{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    
+}
+.col-left{
+    flex-basis: 0;
+    flex-grow: 1;
+    /*margin-top: 15px;*/
+    padding-top: 25px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.col-center{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.col-right{
+    margin: 15px 0px 0 0px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+.third{
+    /*margin: 15px 50px 0 50px;*/
+    text-align: center;
+    color: aliceblue;
+    padding-top: 20px;
+    text-align: left;
+}
+
+.searcher{
+    text-align: left;
+    color: aliceblue;
+}
+.searcher i{
+    margin: 0 7px;
+}
+.third i{
+    margin: 0 7px;
+}
+.my-header{
+    text-align: center;
+    max-width: 100%;
+}
+.main-text{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.second-text{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+.dws-menu *{
+    background-color: aliceblue;
+ margin: 0;
+ padding: 0;
+ z-index: 9999;
+}
+.bottom{
+    border-bottom: 3px solid #1a90cd;/*#1a90cd*/
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content:center;
+}
+.dws-menu > ul li{
+    position: relative;
+}
+/*.dws-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #babbbd;
+}*/
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 17px;
+}
+
+.dws-menu > ul li > a img{
+    position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 17px;
+}
+.dws-menu > ul li a{
+ display: block;
+ padding: 15px 50px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+background-color: aliceblue;
+ /*color: #ffffff;*/
+ box-shadow: 1px 5px 10px -5px rgb(0, 0, 0);
+ transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: aliceblue;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+.photo img{
+    margin-top: 25%;
+}
+
+.slider{
+    width: 850px;
+    height: 450px;
+    overflow: hidden;
+    border-radius: 10px;
+    /*border: solid #06325f;*/
+}
+
+.middle{
+    position: relative;
+    right: 0;
+    left: 0;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navigation{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+.controls{
+    height: 32px;
+    width: 32px;
+    left: 10px;
+    position: absolute;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.bar{
+    height: 8px;
+    width: 30px;
+    margin: 6px;
+    cursor: pointer;
+    background-color:#fec12b;
+    border-radius: 10px;
+    transition: all;
+}
+
+.bar:hover{
+    opacity: 0.8;
+}
+
+input[name = "r"]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.slides{
+    width: 400%;
+    height: 100%;
+    display: flex;
+}
+
+.slide{
+    width: 25%;
+    transition: all .6s ease;
+}
+
+.slide img{
+    width: 100%;
+    height: 100%;
+}
+
+#r1:checked ~.s1{
+    margin-left: 0;
+}
+
+#r2:checked ~.s1{
+    margin-left: -25%;
+}
+
+#r3:checked ~.s1{
+    margin-left: -50%;
+}
+
+#r4:checked ~.s1{
+    margin-left: -75%;
+}
+
+.slide-desc{
+    position: absolute;
+    color:rgb(0, 0, 0);
+    width: 700px;
+    background-color:rgba(240, 248, 255, 0.837);
+    margin-right: 50px;
+    margin-top: 20px;
+    z-index: 3;
+    vertical-align: bottom;
+    padding-left: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.desc4{
+    margin-top: 0px;
+}
+.desc3{
+    margin-top: 330px;
+}
+/*.slide > h1{
+    position: absolute;
+    color: aliceblue;
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 320px;
+    z-index: 3;
+    vertical-align: bottom;
+    opacity: 0.8;
+}*/
+
+.container{
+    margin: 0 auto;
+    padding: 10px 40px;
+}
+.grid-body{
+    display: grid;
+    text-align: center;
+    grid-gap: 50px;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+}
+.matches{
+    height: auto;
+    background-color: #1ad;
+    border-radius: 15px;
+    padding: 15px 10px 10px 10px;
+}
+.pre-title{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 550px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.title-1{
+    display: flex;
+    height: 100px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 15px;
+    justify-content:center;
+    text-align: center;
+    align-items: center;
+}
+
+.title-1 img{
+    display: block;
+    margin: auto;
+    padding-left: auto;
+}
+
+.title-1 a{
+    text-decoration: none;
+}
+.title-text{
+    padding: 15px 10px;
+}
+.descriptions{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.stadium{
+    padding-top: 10px;
+    padding-bottom: 100px;
+}
+.buy-tickets{
+    height: 100%;
+    margin: 10px 90px 10px 90px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #043b78;/*rgba(137, 43, 226, 0.871)*/
+    color: aliceblue;
+    border-radius: 15px;
+    font-family:'Open Sans', sans-serif;
+    font-weight: 500;
+    font-size: 22px;
+    text-decoration: none;
+    height: auto;
+}
+
+.buy-tickets:hover{
+    background-color: #2938a9;
+}
+
+.news{
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.each-news{
+    display: flex;
+    justify-content: space-between;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    padding-bottom: 0;
+    color: black;
+}
+
+.description-news{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img-for-news{
+    margin-right: 10px;
+}
+
+.img-for-news > img{
+    width: 135px;
+    border-radius: 10px;
+}
+
+.title-news{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 992px){
+    .dws-menu > ul li{
+        display: block;
+    }
+    .dws-menu > ul li a{
+        padding: 10px  30px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+    .dws-menu > ul li > a i.fa{
+        top: 10px;
+        left: 8px;
+        font-size: 14px;
+    }
+    .dws-menu > ul li > a img{
+        top: 10px;
+        left: 8px;
+        width: 14px;
+    }
+
+    .each-news{
+        justify-content:space-around;
+        flex-direction: column;
+    }
+    .img-for-news{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .dws-menu > ul li a p{
+        display: none;
+    }
+    .dws-menu > ul li a{
+        padding: 30px 35px 20px;
+        font-size: 12px;
+    }
+    .dws-menu > ul li > a i.fa{
+        vertical-align: middle;
+        left: 16px;
+        font-size: 20px;
+    }
+    .dws-menu > ul li > a img{
+        vertical-align: middle;
+        left: 16px;
+        width: 25px;
+    }
+    .col-left *{
+        font-size: 25px;
+    }
+    .second-text{
+        font-size: 15px;
+    }
+    .my-header a img{
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 480px){
+
+}
+footer{
+    background-color: #043b78;
+    padding: 10px;
+    height: auto;
+    font-size: 20px;
+}
+.footer {
+    padding: 0;
+    margin: 0;
+    
+}
+.main-footer{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+footer p{
+    font-size: 18px;
+    margin: 7px 0px;
+}
+
+footer *{
+    color: aliceblue;
+}

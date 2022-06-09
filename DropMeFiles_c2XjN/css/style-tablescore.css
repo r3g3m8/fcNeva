@@ -1,0 +1,264 @@
+body{
+    font-family: 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+a:-webkit-any-link{
+    text-decoration: none;
+}
+header{
+    right: 0;
+    left: 0;
+    padding-top: 0.5em;
+    background-color: #06325f;
+    width: 100%;
+    margin: auto;
+}
+.row-head{
+    display: flex;
+    /*flex-wrap: wrap;*/
+    
+}
+.col-left{
+    flex-basis: 0;
+    flex-grow: 1;
+    /*margin-top: 15px;*/
+    padding-top: 25px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+.col-center{
+    flex-basis: 0;
+    flex-grow: 1;
+}
+
+.col-right{
+    margin: 15px 0px 0 0px;
+    flex-basis: 0;
+    flex-grow: 1;
+    text-align: left;
+}
+.third{
+    /*margin: 15px 50px 0 50px;*/
+    text-align: left;
+    color: aliceblue;
+    padding-top: 20px;
+}
+
+.searcher{
+    text-align: left;
+    color: aliceblue;
+}
+.searcher i{
+    margin: 0 7px;
+}
+.third i{
+    margin: 0 7px;
+}
+.my-header{
+    text-align: center;
+    max-width: 100%;
+}
+.main-text{
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.second-text{
+    font-size: 22px;
+    color: #fff;
+    font-weight: 400;
+}
+.dws-menu *{
+    background-color: aliceblue;
+ margin: 0;
+ padding: 0;
+ z-index: 9999;
+}
+.bottom{
+    border-bottom: 3px solid #1a90cd;/*#1a90cd*/
+}
+.dws-menu ul,
+.dws-menu ol{
+ list-style: none;
+}
+.dws-menu > ul{
+ display: flex;
+ justify-content:center;
+}
+.dws-menu > ul li{
+    position: relative;
+}
+/*.dws-menu > ul li:first-child{
+ border-left: 1px solid #b2b3b5;
+}
+.dws-menu > ul li:last-child{
+ border-right: 1px solid #babbbd;
+}*/
+.dws-menu > ul li > a i.fa{
+ position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 17px;
+}
+
+.dws-menu > ul li > a img{
+    position: absolute;
+ top: 15px;
+ left: 12px;
+ font-size: 17px;
+}
+.dws-menu > ul li a{
+ display: block;
+ padding: 15px 50px 15px 40px;
+ font-size: 14px;
+ color: #454547;
+ text-decoration: none;
+ text-transform:uppercase;
+ transition: all 0.3s ease;
+}
+.dws-menu li a:hover{
+background-color: aliceblue;
+ /*color: #ffffff;*/
+ box-shadow: 1px 5px 10px -5px rgb(0, 0, 0);
+ transition: all 0.3s ease;
+}
+
+/*sub menu*/
+.dws-menu li ul{
+ position: absolute;
+ min-width: 150px;
+ display: none;
+}
+.dws-menu li > ul li{
+ border: 1px solid #c7c8ca;
+}
+.dws-menu li > ul li a{
+ padding: 10px;
+ text-transform: none;
+ background: aliceblue;
+}
+.dws-menu li > ul li ul{
+ position: absolute;
+ right: -150px;
+ top: 0;
+}
+.dws-menu li:hover > ul{
+ display: block;
+}
+
+.main-container{
+    max-width: 95%;
+    min-width: 50%;
+    margin: 33px auto;
+    align-items: center;
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    background-color:rgb(116, 208, 114);
+    border-radius: 10px;
+}
+
+th{
+    font-size: 18px;
+    padding: 15px;
+}
+th ~#team{
+    padding-right: 300px;
+}
+td{
+    font-size: 18px;
+    text-align: center;
+    padding-bottom: 10px;
+}
+td ~#team{
+    text-align: start;
+}
+td  ~#team img{
+    height: 27px;
+    width: 22px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 992px){
+    .dws-menu > ul li{
+        display: block;
+    }
+    .dws-menu > ul li a{
+        padding: 10px  30px;
+        padding-right: 20px;
+        font-size: 12px;
+    }
+    .dws-menu > ul li > a i.fa{
+        top: 10px;
+        left: 8px;
+        font-size: 14px;
+    }
+    .dws-menu > ul li > a img{
+        top: 10px;
+        left: 8px;
+        width: 14px;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .dws-menu > ul li a p{
+        display: none;
+    }
+    .dws-menu > ul li a{
+        padding: 30px 35px 20px;
+        font-size: 12px;
+    }
+    .dws-menu > ul li > a i.fa{
+        vertical-align: middle;
+        left: 16px;
+        font-size: 20px;
+    }
+    .dws-menu > ul li > a img{
+        vertical-align: middle;
+        left: 16px;
+        width: 25px;
+    }
+    .col-left *{
+        font-size: 25px;
+    }
+    .second-text{
+        font-size: 15px;
+    }
+    .my-header a img{
+        width: 80px;
+    }
+}
+@media only screen and (max-width: 480px){
+
+}
+footer{
+    background-color: #043b78;
+    padding: 10px;
+    height: auto;
+    font-size: 20px;
+}
+.footer {
+    padding: 0;
+    margin: 0;
+    
+}
+.main-footer{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+footer p{
+    font-size: 18px;
+    margin: 7px 0px;
+}
+
+footer *{
+    color: aliceblue;
+}
